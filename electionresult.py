@@ -20,23 +20,6 @@ def counter(matrix):
     return d
 
 
-# def listvalue(t):
-#     if t == 0:
-#         return 0
-#     elif t == 1:
-#         return 1
-#     elif t == 2:
-#         return 2
-#     elif t == 3:
-#         return 3
-#     elif t == 4:
-#         return 4
-#     elif t == 5:
-#         return 5
-#     else:
-#         return 0
-
-
 def kicker(mat, w):
 
     length = len(mat)
@@ -44,9 +27,8 @@ def kicker(mat, w):
     for i in range(0, length):
 
         u = mat[i][w]
-        # if the above line of code doesn't work use the following and un-comment listvalue function
-        # u = listvalue(mat[i][w])
-        # print(u)
+       
+    
         for j in range(0,col):
             if mat[i][j] > u:
                 mat[i][j] = mat[i][j] - 1
